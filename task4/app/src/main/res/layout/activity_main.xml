@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mbassjsp.task4.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtServerResponse"
+            android:layout_width="fill_parent"
+            android:layout_height="343dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:maxLines="200"
+            android:scrollbars="vertical"
+            android:text="@string/hello_world" />
+
+
+        <EditText
+            android:id="@+id/cmdInput"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/cmd" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Register" />
+
+
+            <Button
+                android:id="@+id/btnWho"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="who" />
+
+
+            <Button
+                android:id="@+id/btnSendCmd"
+                android:layout_width="60dp"
+                style="@style/a"
+                android:text="SENDCMD" />
+            <Button
+                android:id="@+id/btnENCRYPT"
+                android:layout_width="90dp"
+                style="@style/a"
+                android:text="ENCRYPT" />
+            <Button
+                android:id="@+id/btnMSG"
+                android:layout_width="60dp"
+                style="@style/a"
+                android:text="MSG" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="exit" />
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="cancel" />
+
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="60dp"
+                style="@style/a"
+                android:onClick="stopSound"
+                android:text="STOP" />
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="90dp"
+                style="@style/a"
+                android:onClick="playSound"
+                android:text="play" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="accept" />
+
+
+            <Button
+                android:id="@+id/btnInvite"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="INVITE" />
+
+
+            <Button
+                android:id="@+id/btnKill"
+                android:layout_width="60dp"
+                style="@style/a"
+                android:text="KILL" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
